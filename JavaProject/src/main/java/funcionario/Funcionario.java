@@ -41,7 +41,6 @@ public class Funcionario implements Runnable {
             try {
                 filaTarefas.insert(leTarefa());
             } catch (IllegalArgumentException exc) {
-                System.out.println("Terminou a lista " + name);
                 filaTarefas.funcFinalized();
                 break;
             } catch (IOException | InterruptedException exc) {

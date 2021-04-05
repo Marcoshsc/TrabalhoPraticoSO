@@ -28,7 +28,7 @@ public class Maquina  implements Runnable{
                 System.out.println(exc.getMessage());
                 break;
             } catch (InterruptedException exc) {
-                System.out.println("Erro na leitura");
+                System.out.println(exc.getMessage());
                 break;
             }
         }

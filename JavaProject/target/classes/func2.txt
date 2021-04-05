@@ -1,4 +1,4 @@
-Funcionario2
+Funcionario 2
 produto2 2720
 produto1 723
 produto3 223
