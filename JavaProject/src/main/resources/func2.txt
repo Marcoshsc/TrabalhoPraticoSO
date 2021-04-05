@@ -1,3 +1,15 @@
 Funcionario2
 produto2 2720
 produto1 723
+produto3 223
+produto4 291
+produto5 690
+produto1 2134
+produto2 4582
+produto1 1234
+produto2 543
+produto1 214
+produto2 687
+produto1 864
+produto2 573
+produto1 377

@@ -28,7 +28,7 @@ public class Funcionario implements Runnable {
         if(tarefaString == null)
             throw new IllegalArgumentException("Terminou arquivo.");
         String[] fields = tarefaString.split(" ");
-        return new Tarefa(fields[0], Integer.parseInt(fields[1]));
+        return new Tarefa(fields[0], Integer.parseInt(fields[1]), name);
     }
 
     public void closeFile() throws IOException {
@@ -41,7 +41,8 @@ public class Funcionario implements Runnable {
             try {
                 filaTarefas.insert(leTarefa());
             } catch (IllegalArgumentException exc) {
-                System.out.println("im");
+                System.out.println("Terminou a lista " + name);
+                filaTarefas.funcFinalized();
                 break;
             } catch (IOException | InterruptedException exc) {
                 System.out.println("Erro na leitura");
