@@ -1,0 +1,5 @@
+Funcionario 1
+produto1 542
+produto3 300
+produto5 470
+produto6 985
