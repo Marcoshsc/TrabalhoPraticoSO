@@ -30,7 +30,8 @@ public class FilaTarefas {
 
     public synchronized void funcFinalized() {
         counter++;
-        notifyAll();
+        if(counter == nFuncionarios)
+            notifyAll();
     }
 
     public synchronized Tarefa pop() throws InterruptedException {
