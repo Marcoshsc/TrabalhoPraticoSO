@@ -25,12 +25,12 @@ public class FilaTarefas {
         tarefas[in] = tarefa;
         in = (in + 1) % tam;
         size++;
-        notify();
+        notifyAll();
     }
 
     public synchronized void funcFinalized() {
         counter++;
-        notify();
+        notifyAll();
     }
 
     public synchronized Tarefa pop() throws InterruptedException {
@@ -42,7 +42,7 @@ public class FilaTarefas {
         Tarefa tarefa = tarefas[out];
         out = (out + 1) % tam;
         size--;
-        notify();
+        notifyAll();
         return tarefa;
     }
 }
