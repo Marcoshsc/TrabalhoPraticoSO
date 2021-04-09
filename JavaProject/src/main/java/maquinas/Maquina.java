@@ -5,6 +5,10 @@ import tarefa.Tarefa;
 
 import java.io.IOException;
 
+/**
+ * Classe que modela a máquina possuindo assim identificador da máquina, e
+ * a fila de tarefas como atributos e métodos para a execução da thread
+ */
 public class Maquina  implements Runnable{
 
     /*

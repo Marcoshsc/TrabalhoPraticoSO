@@ -8,7 +8,9 @@ import java.net.URISyntaxException;
 import java.net.URL;
 
 /**
- * Classe que modela o funcionário
+ * Classe que modela o funcionário possuindo assim o nome do arquivo, nome do funcionário, a fila
+ * de tarefas e buffer do arquivo
+ * como atributos e métodos para a execução da thread e leitura das tarefas do arquivo
  */
 public class Funcionario implements Runnable {
 
