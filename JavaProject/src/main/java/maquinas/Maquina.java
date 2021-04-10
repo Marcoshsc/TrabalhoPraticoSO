@@ -67,7 +67,6 @@ public class Maquina  implements Runnable{
                  * thread da máquina
                  */
             } catch (IllegalArgumentException exc) {
-                System.out.println(exc.getMessage());
                 break;
                 /*
                  * A exceção InterruptedException será lançada se houver algum problema na interrupção das threads,
